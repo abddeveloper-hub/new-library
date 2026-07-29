@@ -1,0 +1,6 @@
+{
+  "name": "Sacred Knowledge System",
+  "description": "An Islamic Sacred Scholarship & Classical Knowledge Platform featuring Quran with Tafsir, Hadith Treasury, Classical Manuscript Explorer, Root Dictionary, Gemini AI Scholar Companion, and Hifz Memorization Studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

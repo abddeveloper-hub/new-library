@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #003527;
+    --color-primary-container: #064e3b;
+    --color-secondary: #775925;
+    --color-secondary-container: #fdd494;
+    --color-surface: #fcf9f8;
+    --color-surface-container: #f0eded;
+    --color-surface-low: #f6f3f2;
+    --color-surface-lowest: #ffffff;
+    --color-on-surface: #1b1c1c;
+    --color-on-variant: #404944;
+    --color-outline: #707974;
+    --color-outline-variant: #bfc9c3;
+  }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #fcf9f8;
+    color: #1b1c1c;
+  }
+}
+
+.font-serif-caslon {
+  font-family: 'Libre Caslon Text', Georgia, serif;
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Scheherazade New', serif;
+}
+
+/* Digital Arabesque Background Pattern */
+.bg-arabesque {
+  background-color: #fcf9f8;
+  background-image: radial-gradient(#064e3b 0.75px, transparent 0.75px), radial-gradient(#775925 0.75px, #fcf9f8 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.04;
+}
+
+.bg-arabesque-dark {
+  background-color: #003527;
+  background-image: radial-gradient(rgba(253, 212, 148, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar for Scholarly Reading */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0eded;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bfc9c3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #064e3b;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
